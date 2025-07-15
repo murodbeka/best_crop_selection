@@ -1,73 +1,55 @@
-#🌱 Sowing Success: Machine Learning Helps Farmers Select the Best Crops
+# 📊 Survey Data Analysis: Low-Income Households in Bulacan
 
-##🚜 Overview
-Agriculture meets algorithms. This project explores how Machine Learning (ML) is transforming farming by helping farmers make smarter decisions about crop selection based on soil data, climate, and other environmental factors.
+This repository contains a Python + SQL-based data analysis project focused on understanding the **electricity consumption and living conditions** of **low-income households** in Bulacan, Philippines.
 
-Using a combination of data preprocessing, classification models, and visual analytics, this project demonstrates how modern tools can lead to better yields, resource efficiency, and informed decisions.
+## 📌 Objective
 
-##🧠 How It Works
-We analyze several parameters that influence crop yield:
+To clean and analyze household survey data and extract meaningful insights about:
+- Income levels and financial challenges
+- Presence of students and their access to technology
+- Energy budgets vs. actual bills
+- Appliance ownership (essential vs. luxury)
+- Struggles in paying electricity bills
 
-- 🌡️ Temperature
+## 📂 Project Structure
 
-- 💧 Humidity
+- `Survey.csv`: Raw survey data
+- `Survey_Database.db`: SQLite database used for storing intermediate and final tables
+- `notebook.ipynb`: Jupyter/Colab notebook performing all data operations and analysis
+- `README.md`: Project overview and instructions
 
-- 🌧️ Rainfall
+## 🧰 Tools Used
 
-- 🧪 Soil pH
+- **Python**: Data manipulation, analysis, and visualization
+- **Pandas**: DataFrame operations
+- **SQLite3**: SQL-based querying and table management
+- **Matplotlib**: Visualizations (pie and bar charts)
 
-- 🌾 Nutrient levels (Nitrogen, Phosphorus, Potassium)
+## 🧪 Key Steps
 
-##🔍 Machine Learning Models
-- Random Forest
+### Part 1: Data Preparation
+- Load CSV data into Pandas
+- Create SQLite tables and perform basic SQL queries
+- Filter households based on location (Bulacan) and student presence
+- Create filtered and structured tables: `Main_Table`, `With_Students`, etc.
 
-- Decision Tree
+### Part 2: Data Analysis
+- Focus on households earning **< Php 21,194/month**
+- Compute average electricity bills and compare them with budgets
+- Examine appliance ownership and identify access gaps
+- Visualize struggles and failure to pay electricity bills
+- Explore correlations between students, technology, and energy usage
 
-- Naive Bayes
+## 📈 Key Insights
 
-- K-Nearest Neighbors
+- Low-income households, on average, spend **Php 3,498.95** on electricity but only budget **Php 2,327.08**.
+- Many households still lack access to essential technology despite having students at home.
+- Significant percentage struggle or fail to pay their electric bills regularly.
 
-- Logistic Regression
+## 🔚 Conclusion
 
-- Each model is trained and evaluated to determine the best performer in predicting the most suitable crop.
+This analysis highlights the pressing financial constraints faced by low-income families and their implications on education, access to technology, and energy security. The findings can support local policy decisions or aid organizations focusing on household energy access and poverty alleviation.
 
-📊 Features
-📈 Visual analysis of climate and soil data
+---
 
-🤖 Multiple ML models with accuracy comparison
-
-💡 Recommendations for the best crop per environment
-
-📦 Exportable results
-
-🛠️ Tech Stack
-Python 3.x
-
-Pandas & NumPy
-
-Scikit-learn
-
-Matplotlib & Seaborn
-
-Jupyter Notebook
-
-📁 Project Structure
-bash
-Copy
-Edit
-├── data/                # Dataset (CSV format)
-├── notebooks/           # Jupyter notebooks
-├── models/              # Saved ML models
-├── visuals/             # Graphs and visualizations
-├── README.md            # You are here
-🌍 Impact
-By leveraging data, farmers can:
-
-Reduce crop failure risk 🌾
-
-Improve resource usage efficiency 💧
-
-Maximize yield 📈
-
-Make data-backed decisions 🧠
-
+✅ For detailed analysis and visualizations, open the [notebook](notebook.ipynb).
