@@ -19,10 +19,10 @@ The goal is to support **smart farming** decisions and reduce the risks of poor 
 ## 📂 Project Structure
 
 ├── data/ # Dataset (CSV format)<BR>
-├── notebooks/ # Jupyter notebooks
-├── models/ # Saved ML models
-├── visuals/ # Graphs and visualizations
-├── README.md # You are here
+├── notebooks/ # Jupyter notebooks<BR>
+├── models/ # Saved ML models<BR>
+├── visuals/ # Graphs and visualizations<BR>
+├── README.md # You are here<BR>
 
 
 ---
